@@ -1,0 +1,25 @@
+<div ng-controller="ShellController as shell">
+    <header id="header">
+        <ul class="header-inner">
+            <li id="menu-trigger"
+                ng-click="shell.sidebarToggle = !shell.sidebarToggle"
+                ng-class="{ 'open': shell.sidebarToggle === true }">
+                <div class="line-wrap">
+                    <div class="line top"></div>
+                    <div class="line center"></div>
+                    <div class="line bottom"></div>
+                </div>
+            </li>
+            <ht-top-nav navline="shell.navline"></ht-top-nav>
+        </ul>
+</header>
+
+    <section id="main">
+        <aside id="sidebar"  ng-class="{ 'toggled': shell.sidebarToggle === true }" ng-include="'app/layout/sidebar.html'"></aside>
+        <section id="content">
+            <div class="container">
+                <div ui-view></div>
+            </div>
+        </section>
+    </section>
+</div>

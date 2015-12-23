@@ -1,0 +1,50 @@
+{
+  "name": "native.core",
+  "version": "0.0.1",
+  "description": "angular windows 8 app framework",
+  "authors": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-mocks": "~1.4.7",
+    "sinon": "http://sinonjs.org/releases/sinon-1.12.1.js",
+    "bardjs": "~0.1.4"
+  },
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "1.4.7",
+    "angular-sanitize": "1.4.7",
+    "angular-resource": "1.4.7",
+    "angular-local-storage": "~0.2.3",
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.3.0",
+    "moment": "~2.10.3",
+    "angular-ui-router": "~0.2.15",
+    "toastr": "~2.1.1",
+    "angular-animate":"1.4.7",
+    "animate.css": "~3.4.0",
+    "material-design-iconic-font": "~2.1.2",
+    "bootstrap-sweetalert": "~0.4.5",
+    "angular-loading-bar": "~0.8.0",
+    "material-shadows": "~2.0.2",
+    "angular-bootstrap":"~0.14.3",
+    "waves": "~0.7.2"
+    
+
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": "dist/css/bootstrap.css",
+      "dist": "dist/js/bootstrap.js"
+    }
+  },
+  "resolutions": {
+    "angular": ">=1.4.7"
+  }
+}

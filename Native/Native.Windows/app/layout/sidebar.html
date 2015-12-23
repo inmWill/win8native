@@ -1,0 +1,23 @@
+﻿<div class="sidebar-inner c-overflow">
+    <div class="profile-menu">
+        <a href="" toggle-submenu>
+            <current-user></current-user>
+        </a>
+        <ul class="main-menu">
+            <li ui-sref-active="active">
+                <a data-ui-sref="account"><i class="zmdi zmdi-account"></i> View Profile</a>
+            </li>
+            <li>
+                <a href=""><i class="zmdi zmdi-time-restore"></i> <auth-logout></auth-logout></a>
+            </li>
+        </ul>
+    </div>
+
+        <ul class="main-menu" ng-controller="SidebarController as vm">
+            <li ng-repeat="r in vm.navRoutes" ui-sref-active="active">
+                <a ui-sref="{{r.name}}" ng-bind-html="r.settings.content"></a>
+            </li>
+        </ul>
+
+</div>
+
