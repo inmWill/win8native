@@ -59,7 +59,7 @@
     </AppxManifest>
     <Content Include=".jscsrc" />
     <Content Include=".jshintrc" />
-    <Content Include=".tmp\app.css" />
+    <Content Include=".tmp\styles.css" />
     <Content Include=".tmp\templates.js" />
     <Content Include="app\account\account.controller.js" />
     <Content Include="app\account\account.controller.spec.js" />
@@ -431,11 +431,12 @@
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
+    <Content Include="images\xpreswash.gif" />
     <Content Include="Index.html" />
     <Content Include="package.json" />
     <Content Include="polyfill\bind-polyfill.js" />
     <Content Include="specs.html" />
-    <Content Include="styles\app.less" />
+    <Content Include="styles\appbk.less" />
     <Content Include="styles\containers\card.less" />
     <Content Include="styles\content\profile.less" />
     <Content Include="styles\inc\bootstrap-overrides.less" />

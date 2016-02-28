@@ -1,4 +1,4 @@
-<div ng-controller="ShellController as shell">
+<!--<div ng-controller="ShellController as shell">
     <header id="header">
         <ul class="header-inner">
             <li id="menu-trigger"
@@ -12,9 +12,9 @@
             </li>
             <ht-top-nav navline="shell.navline"></ht-top-nav>
         </ul>
-</header>
+</header>-->
 
-    <section id="main">
+    <!--<section id="main">
         <aside id="sidebar"  ng-class="{ 'toggled': shell.sidebarToggle === true }" ng-include="'app/layout/sidebar.html'"></aside>
         <section id="content">
             <div class="container">
@@ -22,4 +22,46 @@
             </div>
         </section>
     </section>
-</div>
+</div>-->
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="img img-rounded" src="../../images/xpreswash.gif"/>
+            </div>
+            <div class="col-sm-6 text-center">
+                <h1>Main Menu</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1>System Status</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <button class="btn btn-success">OK</button>
+            </div>
+            <div class="col-sm-8">
+                <p>
+                    Network: Online (100%)
+                    Errors: 0 in last 2 hours
+                    Last Usage: 02/27/16 1:00am
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Accounts</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <button class="btn btn-primary btn-lg">Activate New Account</button>
+            </div>
+            <div class="col-sm-6">
+                <button class="btn btn-primary btn-lg">Check Account</button>
+            </div>
+        </div>
+    </div>

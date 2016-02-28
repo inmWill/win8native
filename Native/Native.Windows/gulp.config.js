@@ -46,8 +46,7 @@ module.exports = function() {
             '**/*.module.js',
             '**/*.js'
         ],
-      //    less: './styles/styles.less', default hottowel
-        less: './styles/app.less',  // material ui 
+          less: './styles/styles.less',
         report: report,
         root: root,
         server: server,
