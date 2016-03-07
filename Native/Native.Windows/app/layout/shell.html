@@ -1,67 +1,91 @@
-<!--<div ng-controller="ShellController as shell">
-    <header id="header">
-        <ul class="header-inner">
-            <li id="menu-trigger"
-                ng-click="shell.sidebarToggle = !shell.sidebarToggle"
-                ng-class="{ 'open': shell.sidebarToggle === true }">
-                <div class="line-wrap">
-                    <div class="line top"></div>
-                    <div class="line center"></div>
-                    <div class="line bottom"></div>
-                </div>
-            </li>
-            <ht-top-nav navline="shell.navline"></ht-top-nav>
-        </ul>
-</header>-->
-
-    <!--<section id="main">
-        <aside id="sidebar"  ng-class="{ 'toggled': shell.sidebarToggle === true }" ng-include="'app/layout/sidebar.html'"></aside>
-        <section id="content">
-            <div class="container">
-                <div ui-view></div>
-            </div>
-        </section>
-    </section>
-</div>-->
-
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <img class="img img-rounded" src="../../images/xpreswash.gif"/>
-            </div>
-            <div class="col-sm-6 text-center">
-                <h1>Main Menu</h1>
-            </div>
+<div class="container pad-container">
+    <div class="row">
+        <div class="col-sm-2">
+            <img class="img img-rounded" src="../../images/xpreswash.gif" />
         </div>
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1>System Status</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <button class="btn btn-success">OK</button>
-            </div>
-            <div class="col-sm-8">
-                <p>
-                    Network: Online (100%)
-                    Errors: 0 in last 2 hours
-                    Last Usage: 02/27/16 1:00am
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <h1>Accounts</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <button class="btn btn-primary btn-lg">Activate New Account</button>
-            </div>
-            <div class="col-sm-6">
-                <button class="btn btn-primary btn-lg">Check Account</button>
-            </div>
+        <div class="col-sm-10 text-center">
+            <h1>{{vm.title}}</h1>
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h2>System Status</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            <button class="btn btn-success btn-block">
+                <h3>OK</h3>
+                <br />
+            </button>
+        </div>
+        <div class="col-sm-9 text-left">
+            <h4>
+                Network: Online (100%)<br />
+                Errors: 0 in last 2 hours<br />
+                Last Usage: 02/27/16 1:00am
+            </h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h2>Accounts</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <a href="#/AddAccount" class="btn btn-primary btn-block">
+                <h3>Activate New Account</h3>
+                <br />
+            </a>
+        </div>
+        <div class="col-sm-6">
+            <a href="#/Account" class="btn btn-primary btn-block">
+                <h3>Check Account</h3>
+                <br />
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h2>Wash Codes</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <a href="#/GenerateCode" class="btn btn-primary btn-block">
+                <h3>Generate New Code</h3>
+                <br />
+            </a>
+        </div>
+        <div class="col-sm-6">
+            <a href="#/CheckCode" class="btn btn-primary btn-block">
+                <h3>Check Code</h3>
+                <br />
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h2>System Administration</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <a href="#/Configuration" class="btn btn-primary btn-block">
+                <h3>Configuration</h3>
+                <br />
+            </a>
+        </div>
+        <div class="col-sm-6">
+            <a href="#/CheckCode" class="btn btn-primary btn-block">
+                <h3>Logs</h3>
+                <br />
+            </a>
+        </div>
+    </div>
+</div>
+                <div ui-view></div>
+
+
+

@@ -15,7 +15,7 @@
         };
         vm.messageCount = 0;
         vm.people = [];
-        vm.title = 'Dashboard';
+        vm.title = 'Main Menu';
 
         activate();
 
