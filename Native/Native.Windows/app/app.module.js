@@ -10,7 +10,10 @@
         'app.people',
         'app.account',
         'app.auth',
-        'app.layout'
+        'app.layout',
+        'app.configuration',
+        'app.logs',
+        'app.system'
     ]);
 
 })();
